@@ -1,0 +1,49 @@
+
+        header{
+        margin-top: 1%;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        }
+
+        #banner{
+        border-radius: 10px;
+        width: 90%;
+        height: 30%;    
+        }
+
+        #contato{
+        position: absolute;
+        width: 4%;
+        margin-left: 41%;
+        margin-top: 10%;
+        }
+
+        #carrinho{
+        position: absolute;
+        width: 5.5%;
+        margin-left: 36%;
+        margin-top: 10%;
+        }
+
+        #sobre{
+        position: absolute;
+        width: 4%;
+        margin-left: 31%;
+        margin-top: 10%;
+        }
+
+        #inicial{
+        position: absolute;
+        width: 6.5%;
+        margin-left: 41%;
+        margin-top: 1%;
+        }
+
+        #login{
+        position: absolute;
+        width: 4%;
+        margin-left: -41%;
+        margin-top: 1%;
+        }
+        
