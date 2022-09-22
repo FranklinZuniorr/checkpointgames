@@ -1,35 +1,54 @@
 
         header{
-        margin-top: 1%;
-        background-color: aliceblue;
+        margin-top: 1.5%;
+        
         display: flex;
         justify-content: center;
+        }
+
+        nav{
+        margin-top: 1.5%;
+        background-color: rgb(255, 255, 0);
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        font-size: 80%;
+        }
+
+        section{
+        margin-top: 1.5%;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        font-size: 80%;
         }
 
         #banner{
         border-radius: 10px;
         width: 90%;
-        height: 30%;    
+        height: 30%;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.51);    
         }
 
         #contato{
         position: absolute;
-        width: 4%;
+        width: 4.8%;
         margin-left: 41%;
         margin-top: 10%;
         }
 
         #carrinho{
         position: absolute;
-        width: 5.5%;
-        margin-left: 36%;
+        width: 6%;
+        margin-left: 35%;
         margin-top: 10%;
         }
 
         #sobre{
         position: absolute;
-        width: 4%;
-        margin-left: 31%;
+        width: 4.85%;
+        margin-left: 29.5%;
         margin-top: 10%;
         }
 
@@ -46,4 +65,38 @@
         margin-left: -41%;
         margin-top: 1%;
         }
+
+        button#stes{
+        background-image: url('C:/Users/gamer/Desktop/Site CheckPoint Games/img/st2.png');
+        background-color: transparent;
+        border: none;
+        outline: none;
+        background-size: cover;
+        width: 27px;
+        height: auto;
+        margin-right: 1%;
+        }
+
+        button#stdir{
+        background-image: url('C:/Users/gamer/Desktop/Site CheckPoint Games/img/st1.png');
+        background-color: transparent;
+        border: none;
+        outline: none;
+        background-size: cover;
+        width: 27px;
+        height: auto;
+        margin-left: 1%;
+        }
+
+        .ct{
+        box-sizing: border-box;
+        width: 30%;
+        height: 10%;
+        background: linear-gradient(180deg, #D14444 0%, #6C1B1B 100%);
+        border: 0.6px solid #000000;
+        font-size: 70%;
+        padding: 0.36%;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.51);
+        }
+
         
