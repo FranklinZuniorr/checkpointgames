@@ -12,6 +12,8 @@
         justify-content: center;
         width: 90%;
         font-size: 80%;
+        font-family: roboto;
+        color: white;
         }
 
         section{
@@ -21,6 +23,7 @@
         justify-content: center;
         width: 90%;
         font-size: 80%;
+        font-family: roboto;
         }
 
         #banner{
@@ -141,7 +144,87 @@
         width: 100%;
         background: #1B1B1B;
         border: 2px solid #A63232;
+        border-radius: 10px;
+        color: white;
+        }
+
+        #tit{
+        width: 90%;
+        background: #1B1B1B;
+        border: 1px solid #27f320;
         border-radius: 20px;
+        color: white;
+        margin: 3%;
+        font-size: 70%;
+        }
+
+        @media only screen and (min-width: 0px) {
+        #busca{
+        width: 95%;
+        margin-right: 0.3;
+        border: none;
+        outline: none;
+        font-size: 70%;
+        }
+
+        #pes{
+        background-image: url('C:/Users/gamer/Desktop/Site CheckPoint Games/img/pes.png');
+        background-repeat: no-repeat;
+        background-color: white;
+        background-position: center;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background-size: 60%;
+        width: 20px;
+        height: auto;
+        margin-left: 0.6%;
+        margin-top: 0%;
+        }
+        }
+
+        @media only screen and (min-width: 600px) {
+        #busca{
+        width: 95%;
+        margin-right: 0.3;
+        border: none;
+        outline: none;
+        font-size: 90%;
+        }
+
+        #pes{
+        background-image: url('C:/Users/gamer/Desktop/Site CheckPoint Games/img/pes.png');
+        background-repeat: no-repeat;
+        background-color: white;
+        background-position: center;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background-size: 60%;
+        width: 26px;
+        height: auto;
+        margin-left: 0.6%;
+        margin-top: 0%;
+        }
+        
+        #tit{
+        width: 90%;
+        background: #1B1B1B;
+        border: 1px solid #27f320;
+        border-radius: 20px;
+        color: white;
+        margin: 3%;
+        font-size: 90%;
+        }
+        }
+
+        .pdt{
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        font-size: 80%;
+        font-family: roboto;
         }
 
         
