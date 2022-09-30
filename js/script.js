@@ -2,9 +2,9 @@
 iniciar();
 
 function iniciar(){
-    cat = ["Hardware", "Periférico", "Games", "Computadores", "Smartphones", "Tv", "dfsfs", "dfsdfs", "fwerwe", "fweeeee", "3242fd"];
+    cat = ["Hardware", "Periférico", "Games", "Computadores", "Smartphones", "Tv"];
     x = 0;
-    catt = cat.length;
+    catt = cat.length/2;
     
     bar = ["" + cat[0+x], "" + cat[1+x], "" + cat[2+x]];
     ct1.innerHTML = bar[0];
@@ -14,16 +14,8 @@ function iniciar(){
 }
 
 function mais(a = 0){
-    console.log(a);
-    if(catt % 2 == 1){
-        catt = catt/2 + 1;
-    }
 
-    else if(catt % 2 == 0){
-        catt = catt/2;
-    }
-
-    if(a == 1 && x <= Math.ceil(catt)){
+    if(a == 1 && x < catt){
         x++;
         console.log(x);
         bar = ["" + cat[0+x], "" + cat[1+x], "" + cat[2+x]];
@@ -41,3 +33,4 @@ function mais(a = 0){
     }
 
 }
+// Barra de categorias.
