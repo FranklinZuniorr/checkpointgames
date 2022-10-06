@@ -1,3 +1,34 @@
+// Escolher categoria/filtro.
+
+filtro = [];
+
+function ctia(n){
+
+var y = document.getElementById("ct" + n).textContent;
+console.log(y);
+tem = 0;
+    
+for(var j = 0; j < qpr; j++){
+    
+    if(produtos[j].categoria.includes(y.toLowerCase())){
+        console.log("SIM!");
+        filtro[tem] = produtos[j];
+        tem++;
+        
+    } 
+        
+    else {
+        console.log("NÃO!");
+    }
+    
+}
+    
+console.log(filtro);
+start(1);
+}
+    
+// Escolher categoria/filtro.
+
 // Mostrar produtos.
 
 produtos = [
@@ -19,14 +50,14 @@ produtos = [
     foto: "C:/Users/gamer/Desktop/Site CheckPoint Games/img/produtos/case-para-fone-de-ouvido-gamer-hyperx-cloud-earbuds-hxs-hsceb-bk-cc-_1621258186_m.jpg",
     titulo: "Case para Fone de Ouvido Gamer HyperX Cloud Earbuds - HXS-HSCEB-BK-CC",
     valor: "R$ 19,99",
-    categoria: "periferico"
+    categoria: "periférico"
     },
 
     {
     foto: "C:/Users/gamer/Desktop/Site CheckPoint Games/img/produtos/mouse-gamer-redragon-cobra-chroma-rgb-12400dpi-7-botoes-preto-m711-v2_1656018617_m.jpg",
     titulo: "Mouse Gamer Redragon Cobra, Chroma RGB, 12400DPI, 7 Botões, Preto - M711 V2",
     valor: "R$ 116,99",
-    categoria: "periferico"
+    categoria: "periférico"
     },
     
     {
@@ -89,38 +120,85 @@ produtos = [
 
 qpr = produtos.length;
 
-g = 1;
+start(0);
 
-for(t = 0; t <= 4; t++){
+function start(tipo){
+    
+    if(tipo == 0){
+
+        g = 1;
+
+        for(t = 0; t <= 4; t++){
     
     
 
-    display.innerHTML = display.innerHTML +
+        display.innerHTML = display.innerHTML +
     
-    '<div class="pdt">' + 
+        '<div class="pdt">' + 
 
-    '<div class="pd">' +
-       '<img src="' + produtos[t].foto + '"class="ftproduto" >' +
-       '<div class="pdimg"><img src="C:/Users/gamer/Desktop/Site CheckPoint Games/img/comprar.png" class="cp"></div>' +
-       '<div class="pdtxt">' + produtos[t].titulo + '</div>' +
-       '<div class="pdvalor">' + produtos[t].valor + '</div>' +
-   '</div>' +
+        '<div class="pd">' +
+        '<img src="' + produtos[t].foto + '"class="ftproduto" >' +
+        '<div class="pdimg"><img src="C:/Users/gamer/Desktop/Site CheckPoint Games/img/comprar.png" class="cp"></div>' +
+        '<div class="pdtxt">' + produtos[t].titulo + '</div>' +
+        '<div class="pdvalor">' + produtos[t].valor + '</div>' +
+        '</div>' +
 
-   '<div style="background-color: #A63232; width: 0.6%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
+        '<div style="background-color: #A63232; width: 0.6%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
 
-    '<div class="pd">' +
-       '<img src="' + produtos[g].foto + '"class="ftproduto" >' +
-       '<div class="pdimg"><img src="C:/Users/gamer/Desktop/Site CheckPoint Games/img/comprar.png" class="cp"></div>' +
-       '<div class="pdtxt">' + produtos[g].titulo + '</div>' +
-       '<div class="pdvalor">' + produtos[g].valor + '</div>' +
-   '</div>' +
+        '<div class="pd">' +
+        '<img src="' + produtos[g].foto + '"class="ftproduto" >' +
+        '<div class="pdimg"><img src="C:/Users/gamer/Desktop/Site CheckPoint Games/img/comprar.png" class="cp"></div>' +
+        '<div class="pdtxt">' + produtos[g].titulo + '</div>' +
+        '<div class="pdvalor">' + produtos[g].valor + '</div>' +
+        '</div>' +
 
-   '</div>';
+        '</div>';
 
-   g = g + 2;
-   t++
+        g = g + 2;
+        t++
 
     
+        }
+    }
+
+    else if(tipo == 1){
+
+        display.innerHTML = "";
+
+        g = 1;
+
+        for( t = 0; t <= 4; t++){
+    
+    
+
+        display.innerHTML = display.innerHTML +
+    
+        '<div class="pdt">' + 
+
+        '<div class="pd">' +
+        '<img src="' + filtro[t].foto + '"class="ftproduto" >' +
+        '<div class="pdimg"><img src="C:/Users/gamer/Desktop/Site CheckPoint Games/img/comprar.png" class="cp"></div>' +
+        '<div class="pdtxt">' + filtro[t].titulo + '</div>' +
+        '<div class="pdvalor">' + filtro[t].valor + '</div>' +
+        '</div>' +
+
+        '<div style="background-color: #A63232; width: 0.6%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
+
+        '<div class="pd">' +
+        '<img src="' + filtro[g].foto + '"class="ftproduto" >' +
+        '<div class="pdimg"><img src="C:/Users/gamer/Desktop/Site CheckPoint Games/img/comprar.png" class="cp"></div>' +
+        '<div class="pdtxt">' + filtro[g].titulo + '</div>' +
+        '<div class="pdvalor">' + filtro[g].valor + '</div>' +
+        '</div>' +
+
+        '</div>';
+
+        g = g + 2;
+        t++
+
+    
+        }
+    }
 }
 
 function vertudo(){

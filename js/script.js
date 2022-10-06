@@ -34,3 +34,11 @@ function mais(a = 0){
 
 }
 // Barra de categorias.
+
+// Escolher categoria.
+
+function ctia(n){
+    var x = "ct" + n;
+    var y = document.getElementById(x).textContent;
+    console.log(y);
+    }
