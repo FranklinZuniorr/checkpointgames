@@ -1,8 +1,16 @@
+filtro = [];
+
+vtdd = 0;
+
 // Escolher categoria/filtro.
+
+function ctia(n){
 
 filtro = [];
 
-function ctia(n){
+vmais.innerHTML = "Ver mais produtos...";
+
+vtdd = 1;
 
 var y = document.getElementById("ct" + n).textContent;
 console.log(y);
@@ -28,6 +36,44 @@ start(1);
 }
     
 // Escolher categoria/filtro.
+
+// Escolher via barra de pesquisa.
+
+function pes(){
+
+if(document.getElementById("busca").value != ""){
+
+filtro = [];
+
+vmais.innerHTML = "Ver mais produtos...";
+
+vtdd = 1;
+
+pesquisa = document.getElementById("busca").value;
+console.log(pesquisa);
+tem = 0;
+
+for(var j = 0; j < qpr; j++){
+    
+    if(produtos[j].titulo.includes(pesquisa)){
+        console.log("SIM!");
+        filtro[tem] = produtos[j];
+        tem++;
+        
+    } 
+        
+    else {
+        console.log("NÃO!");
+    }
+    
+}
+    
+console.log(filtro);
+start(1);
+}
+}
+
+// Escolher via barra de pesquisa.
 
 // Mostrar produtos.
 
@@ -161,15 +207,13 @@ function start(tipo){
         }
     }
 
-    else if(tipo == 1){
+    else if(tipo == 1 && filtro.length > 1){
 
         display.innerHTML = "";
 
         g = 1;
 
         for( t = 0; t <= 4; t++){
-    
-    
 
         display.innerHTML = display.innerHTML +
     
@@ -199,14 +243,38 @@ function start(tipo){
     
         }
     }
+
+    else if(tipo == 1 && filtro.length == 1){
+
+        for( t = 0; t <= 4; t++){
+
+        display.innerHTML =
+
+        '<div class="pdt">' + 
+
+        '<div class="pd">' +
+        '<img src="' + filtro[t].foto + '"class="ftproduto" >' +
+        '<div class="pdimg"><img src="C:/Users/gamer/Desktop/Site CheckPoint Games/img/comprar.png" class="cp"></div>' +
+        '<div class="pdtxt">' + filtro[t].titulo + '</div>' +
+        '<div class="pdvalor">' + filtro[t].valor + '</div>' +
+        '</div>' + '</div>';
+
+    }
+    }
+
+    else if(tipo == 1 && filtro.length == 0){
+        display.innerHTML = "";
+        vmais.innerHTML = "Nenhum produto disponível!";
+    }
 }
 
 function vertudo(){
-    vmais.innerHTML = " ";
+
+    if(vtdd == 0 && qpr > 4){
+
+    vmais.innerHTML = "Nenhum produto disponível!";
 
     for(t = 0; t < qpr; t++){
-    
-    
 
         display.innerHTML = display.innerHTML +
         
@@ -234,6 +302,52 @@ function vertudo(){
        t++
     
         
+    }
+
+    }
+
+    else if(vtdd == 0 && qpr < 4){
+        vmais.innerHTML = "Nenhum produto disponível!";
+
+    }
+
+    if(vtdd == 1 && filtro.length > 4){
+    
+        for(t = 0; t < qpr; t++){
+    
+            display.innerHTML = display.innerHTML +
+            
+            '<div class="pdt">' + 
+        
+            '<div class="pd">' +
+               '<img src="' + filtro[t].foto + '"class="ftproduto" >' +
+               '<div class="pdimg"><img src="C:/Users/gamer/Desktop/Site CheckPoint Games/img/comprar.png" class="cp"></div>' +
+               '<div class="pdtxt">' + filtro[t].titulo + '</div>' +
+               '<div class="pdvalor">' + filtro[t].valor + '</div>' +
+           '</div>' +
+        
+           '<div style="background-color: #A63232; width: 0.6%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
+        
+            '<div class="pd">' +
+               '<img src="' + filtro[g].foto + '"class="ftproduto" >' +
+               '<div class="pdimg"><img src="C:/Users/gamer/Desktop/Site CheckPoint Games/img/comprar.png" class="cp"></div>' +
+               '<div class="pdtxt">' + filtro[g].titulo + '</div>' +
+               '<div class="pdvalor">' + filtro[g].valor + '</div>' +
+           '</div>' +
+        
+           '</div>';
+        
+           g = g + 2;
+           t++
+        
+            
+        }
+        
+    }
+
+    else if(vtdd == 1 && filtro.length < 4){
+        vmais.innerHTML = "Nenhum produto disponível!";
+
     }
     
 }
