@@ -75,7 +75,7 @@ start(1);
 else if(document.getElementById("busca").value == ""){
     
     display.innerHTML = "";
-    vmais.innerHTML = "Nenhum outro produto disponível!";
+    vmais.innerHTML = "Nenhum produto disponível!";
 
 }
 }
@@ -322,7 +322,7 @@ function start(tipo){
 
     else if(tipo == 1 && filtro.length == 0){
         display.innerHTML = "";
-        vmais.innerHTML = "Nenhum outro produto disponível!";
+        vmais.innerHTML = "Nenhum produto disponível!";
     }
 }
 
