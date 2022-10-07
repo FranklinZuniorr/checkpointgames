@@ -71,6 +71,13 @@ for(var j = 0; j < qpr; j++){
 console.log(filtro);
 start(1);
 }
+
+else if(document.getElementById("busca").value == ""){
+    
+    display.innerHTML = "";
+    vmais.innerHTML = "Nenhum outro produto disponível!";
+
+}
 }
 
 // Escolher via barra de pesquisa.
@@ -82,6 +89,34 @@ produtos = [
     foto: "C:/Users/gamer/Desktop/Site CheckPoint Games/img/produtos/placa-de-video-zotac-gaming-nvidia-geforce-rtx-2060-6gb-gddr6-zt-t20600h-10m_1582213398_m.jpg",
     titulo: "Placa de Vídeo Zotac Gaming NVIDIA GeForce RTX 2060, 6GB, GDDR6 - ZT-T20600H-10M",
     valor: "R$ 2.599,99",
+    categoria: "hardware"
+    },
+
+    {
+    foto: "C:/Users/gamer/Desktop/Site CheckPoint Games/img/produtos/95803_1522867513_index_m.jpg",
+    titulo: "HD Seagate 4TB BarraCuda, 3.5', SATA - ST4000DM004",
+    valor: "R$ 445,99",
+    categoria: "hardware"
+    },
+
+    {
+    foto: "C:/Users/gamer/Desktop/Site CheckPoint Games/img/produtos/95803_1522867513_index_m.jpg",
+    titulo: "HD Seagate 4TB BarraCuda, 3.5', SATA - ST4000DM004",
+    valor: "R$ 445,99",
+    categoria: "hardware"
+    },
+
+    {
+    foto: "C:/Users/gamer/Desktop/Site CheckPoint Games/img/produtos/95803_1522867513_index_m.jpg",
+    titulo: "HD Seagate 4TB BarraCuda, 3.5', SATA - ST4000DM004",
+    valor: "R$ 445,99",
+    categoria: "hardware"
+    },
+
+    {
+    foto: "C:/Users/gamer/Desktop/Site CheckPoint Games/img/produtos/95803_1522867513_index_m.jpg",
+    titulo: "HD Seagate 4TB BarraCuda, 3.5', SATA - ST4000DM004",
+    valor: "R$ 445,99",
     categoria: "hardware"
     },
 
@@ -170,7 +205,7 @@ start(0);
 
 function start(tipo){
     
-    if(tipo == 0){
+    if(tipo == 0 && produtos.length > 1){
 
         g = 1;
 
@@ -207,13 +242,36 @@ function start(tipo){
         }
     }
 
-    else if(tipo == 1 && filtro.length > 1){
+    else if(tipo == 0 && produtos.length == 1){
+
+        for( t = 0; t <= 4; t++){
+
+        display.innerHTML =
+
+        '<div class="pdt">' + 
+
+        '<div class="pd">' +
+        '<img src="' + produtos[t].foto + '"class="ftproduto" >' +
+        '<div class="pdimg"><img src="C:/Users/gamer/Desktop/Site CheckPoint Games/img/comprar.png" class="cp"></div>' +
+        '<div class="pdtxt">' + produtos[t].titulo + '</div>' +
+        '<div class="pdvalor">' + produtos[t].valor + '</div>' +
+        '</div>' + '</div>';
+
+    }
+    }
+
+    else if(tipo == 0 && produtos.length == 0){
+        display.innerHTML = "";
+        vmais.innerHTML = "Nenhum outro produto disponível!";
+    }
+
+    if(tipo == 1 && filtro.length > 1){
 
         display.innerHTML = "";
 
         g = 1;
 
-        for( t = 0; t <= 4; t++){
+        for( t = 0; t < 4; t++){
 
         display.innerHTML = display.innerHTML +
     
@@ -264,7 +322,7 @@ function start(tipo){
 
     else if(tipo == 1 && filtro.length == 0){
         display.innerHTML = "";
-        vmais.innerHTML = "Nenhum produto disponível!";
+        vmais.innerHTML = "Nenhum outro produto disponível!";
     }
 }
 
@@ -272,7 +330,7 @@ function vertudo(){
 
     if(vtdd == 0 && qpr > 4){
 
-    vmais.innerHTML = "Nenhum produto disponível!";
+    vmais.innerHTML = "Nenhum outro produto disponível!";
 
     for(t = 0; t < qpr; t++){
 
@@ -307,11 +365,13 @@ function vertudo(){
     }
 
     else if(vtdd == 0 && qpr < 4){
-        vmais.innerHTML = "Nenhum produto disponível!";
+        vmais.innerHTML = "Nenhum outro produto disponível!";
 
     }
 
     if(vtdd == 1 && filtro.length > 4){
+
+        vmais.innerHTML = "Nenhum outro produto disponível!";
     
         for(t = 0; t < qpr; t++){
     
@@ -346,7 +406,7 @@ function vertudo(){
     }
 
     else if(vtdd == 1 && filtro.length < 4){
-        vmais.innerHTML = "Nenhum produto disponível!";
+        vmais.innerHTML = "Nenhum outro produto disponível!";
 
     }
     
