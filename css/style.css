@@ -26,6 +26,18 @@
         font-family: roboto;
         }
 
+        footer{
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+        margin-left: 5%;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        font-size: 60%;
+        font-family: roboto;
+        }
+
         #banner{
         border-radius: 10px;
         width: 90%;
@@ -58,7 +70,7 @@
         #inicial{
         position: absolute;
         width: 7.5%;
-        margin-left: 41%;
+        margin-left: -8%;
         margin-top: 1%;
         }
 
@@ -95,7 +107,7 @@
         #inicial{
         position: absolute;
         width: 6.5%;
-        margin-left: 41%;
+        margin-left: -8%;
         margin-top: 1%;
         }
 
@@ -146,6 +158,17 @@
         border: 2px solid #A63232;
         border-radius: 10px;
         color: white;
+        }
+
+        #pé{
+        width: 100%;
+        background: #1B1B1B;
+        border: 2px solid #A63232;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding-top: 4%;
         }
 
         #tit{
@@ -238,6 +261,8 @@
         
         .pd{
         width: 60%;
+        padding-top: 5%;
+        padding-bottom: 5%;
         }
 
         .pdtxt{
@@ -267,6 +292,46 @@
         position: absolute;
         }
 
+        #pgs{
+
+        margin-left: 2%;
+        margin-right: 5%;
+        font-size: 120%;
+        font-family: roboto;
+        }
+
+        #pgst{
+  
+        margin-left: -40%;
+        font-size: 160%;
+        font-family: roboto;
+        }
+
+        #redes{
+
+        margin-left: -139px;
+        margin-top: 15px;
+        width: 100px;
+        height: 30px;
+        
+        }
+
+        #lgo{
+
+        margin-left: 30px;
+        margin-right: 1%;
+        margin-top: -50px;
+        width: 260px;
+        height: 180px;
+        
+        }
+
+        #pgstt{
+        margin-left: 0%;
+        margin-top: 50px;
+        font-size: 140%;
+        font-family: roboto;
+        }
         }
 
         @media only screen and (max-width: 600px) {
@@ -281,6 +346,7 @@
         .pd{
         width: 60%;
         padding-top: 5%;
+        padding-bottom: 5%;
         }
 
         .pdtxt{
@@ -309,6 +375,47 @@
         width: 30%;
         margin-top: -7%;
         position: absolute;
+        }
+
+        #pgs{
+
+        margin-left: 2%;
+        margin-right: 5%;
+        font-size: 120%;
+        font-family: roboto;
+        }
+
+        #pgst{
+  
+        margin-left: -40%;
+        font-size: 160%;
+        font-family: roboto;
+        }
+
+        #redes{
+
+        margin-left: -35%;
+        margin-top: 15px;
+        width: 70px;
+        height: 20px;
+        
+        }
+
+        #lgo{
+
+        margin-left: 30px;
+        margin-right: 1%;
+        margin-top: -50px;
+        width: 150px;
+        height: 100px;
+        
+        }
+
+        #pgstt{
+        margin-left: 0%;
+        margin-top: 50px;
+        font-size: 120%;
+        font-family: roboto;
         }
 
         }
