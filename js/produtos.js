@@ -169,13 +169,6 @@ produtos = [
     valor: "R$ 3.249,99",
     categoria: "tv",
     },
-
-        {
-    foto: "C:/Users/gamer/Desktop/Site CheckPoint Games/img/produtos/smart-tv-samsung-55-qled-4k-hdr-wifi-bluetooth-hdmi-usb-alexa-e-google-assistente-preto-qn55q60bagxzd_1649767103_m.jpg",
-    titulo: "Smart TV Samsung 55 QLED 4K, HDR, Wifi, Bluetooth, HDMI, USB, Alexa e Google Assistente, Preto - QN55Q60BAGXZD",
-    valor: "R$ 3.249,99",
-    categoria: "tv",
-    }
     
 ];
 

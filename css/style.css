@@ -27,15 +27,16 @@
         }
 
         footer{
-        margin-top: 1.5%;
-        margin-bottom: 1.5%;
+        width: 90%;
+        height: auto;
+        background: #1B1B1B;
+        border: 2px solid #A63232;
+        border-radius: 10px;
+        color: white;
         margin-left: 5%;
-        background-color: blue;
+        margin-top: 3%;
         display: flex;
         justify-content: center;
-        width: 90%;
-        font-size: 60%;
-        font-family: roboto;
         }
 
         #banner{
@@ -161,14 +162,6 @@
         }
 
         #pé{
-        width: 100%;
-        background: #1B1B1B;
-        border: 2px solid #A63232;
-        border-radius: 10px;
-        color: white;
-        display: flex;
-        justify-content: center;
-        padding-top: 4%;
         }
 
         #tit{
@@ -292,45 +285,25 @@
         position: absolute;
         }
 
-        #pgs{
-
-        margin-left: 2%;
-        margin-right: 5%;
-        font-size: 120%;
-        font-family: roboto;
+        #ftpng{
+        width: 60%;
+        height: auto;
+        opacity: 0%;
         }
 
-        #pgst{
-  
-        margin-left: -40%;
-        font-size: 160%;
-        font-family: roboto;
+        #kpl4{
+        position: absolute;
+        width: 15%;
+        height: auto;
+        margin-left: -8%;
+        margin-top: 4%;
         }
 
-        #redes{
-
-        margin-left: -139px;
-        margin-top: 15px;
-        width: 100px;
-        height: 30px;
-        
-        }
-
-        #lgo{
-
-        margin-left: 30px;
-        margin-right: 1%;
-        margin-top: -50px;
-        width: 260px;
-        height: 180px;
-        
-        }
-
-        #pgstt{
-        margin-left: 0%;
-        margin-top: 50px;
-        font-size: 140%;
-        font-family: roboto;
+        #kpl5{
+        position: absolute;
+        width: 30%;
+        margin-left: 19%;
+        margin-top: -4.5%;
         }
         }
 
@@ -418,7 +391,170 @@
         font-family: roboto;
         }
 
+        #ftpng{
+        width: 60%;
+        height: 10%;
+        opacity: 0%;
         }
 
+        #kpl4{
+        position: absolute;
+        width: 15%;
+        height: auto;
+        margin-left: -8%;
+        margin-top: 4%;
+        }
+
+        #kpl5{
+        position: absolute;
+        width: 30%;
+        margin-left: 19%;
+        margin-top: -4.5%;
+        }
+        }
+
+        @media only screen and (min-width: 700px) {
+
+        #kpl2{
+        position: absolute;
+        height: auto;
+        margin-left: -50%;
+        margin-top: 2.5%;
+        font-size:  10px;
+        }
+
+        #kpl3{
+        position: absolute;
+        width: 15%;
+        margin-left: -14%;
+        margin-top: 9%;
+        font-size: 9px;
+        }
+
+        }
+
+        @media only screen and (max-width: 700px) {
+
+        #kpl2{
+        position: absolute;
+        height: auto;
+        margin-left: -50%;
+        margin-top: 2.5%;
+        font-size:  9px;
+        }
+
+        #kpl3{
+        position: absolute;
+        width: 15%;
+        margin-left: -14%;
+        margin-top: 9%;
+        font-size: 8px;
+        }
+
+        }
+
+        @media only screen and (max-width: 600px) {
+
+        #kpl2{
+        position: absolute;
+        height: auto;
+        margin-left: -50%;
+        margin-top: 1.8%;
+        font-size:  8px;
+        }
+
+        #kpl3{
+        position: absolute;
+        width: 15%;
+        margin-left: -14%;
+        margin-top: 9%;
+        font-size: 7px;
+        }
+
+        }
+
+        @media only screen and (max-width: 500px) {
+
+        #kpl2{
+        position: absolute;
+        height: auto;
+        margin-left: -50%;
+        margin-top: 2.2%;
+        font-size:  7px;
+        }
+
+        #kpl3{
+        position: absolute;
+        width: 15%;
+        margin-left: -14%;
+        margin-top: 9%;
+        font-size: 6px;
+        }
+
+        }
+
+        @media only screen and (max-width: 450px) {
+
+        #kpl2{
+        position: absolute;
+        height: auto;
+        margin-left: -50%;
+        margin-top: 2.2%;
+        font-size:  6px;
+        }
+
+        #kpl3{
+        position: absolute;
+        width: 15%;
+        margin-left: -14%;
+        margin-top: 9%;
+        font-size: 5px;
+        }
+
+        }
+
+        @media only screen and (max-width: 400px) {
+
+        #kpl2{
+        position: absolute;
+        height: auto;
+        margin-left: -52%;
+        margin-top: 2.5%;
+        font-size:  5px;
+        }
+
+        #kpl3{
+        position: absolute;
+        width: 15%;
+        margin-left: -14%;
+        margin-top: 9%;
+        font-size: 4px;
+        }
+
+        }
+
+        @media only screen and (max-width: 359px) {
+
+        #kpl2{
+        display: none
+        }
+
+        #kpl3{
+        display: none
+        }
+
+        #kpl4{
+        display: none
+        }
+
+        #kpl5{
+        position: absolute;
+        width: 30%;
+        margin-left: 0%;
+        margin-top: -4.5%;
+        }
+
+        }
         
+
         
