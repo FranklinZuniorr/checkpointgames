@@ -208,7 +208,7 @@ function start(tipo){
         '<div class="pdvalor">' + produtos[t].valor + '</div>' +
         '</div>' +
 
-        '<div style="background-color: #A63232; width: 0.6%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
+        '<div style="background-color: #A63232; width: 0.2%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
 
         '<div class="pd">' +
         '<img src="' + produtos[g].foto + '"class="ftproduto" >' +
@@ -234,7 +234,7 @@ function start(tipo){
 
         '<div class="pdt">' + 
 
-        '<div style="background-color: #A63232; width: 0.6%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
+        '<div style="background-color: #A63232; width: 0.2%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
 
         '<div class="pd">' +
         '<img src="' + produtos[t].foto + '"class="ftproduto" >' +
@@ -270,7 +270,7 @@ function start(tipo){
         '<div class="pdvalor">' + filtro[t].valor + '</div>' +
         '</div>' +
 
-        '<div style="background-color: #A63232; width: 0.6%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
+        '<div style="background-color: #A63232; width: 0.2%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
 
         '<div class="pd">' +
         '<img src="' + filtro[g].foto + '"class="ftproduto" >' +
@@ -296,7 +296,7 @@ function start(tipo){
 
         '<div class="pdt">' +
         
-        '<div style="background-color: #A63232; width: 0.6%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
+        '<div style="background-color: #A63232; width: 0.2%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
 
         '<div class="pd">' +
         '<img src="' + filtro[t].foto + '"class="ftproduto" >' +
@@ -333,7 +333,7 @@ function vertudo(){
            '<div class="pdvalor">' + produtos[t].valor + '</div>' +
        '</div>' +
     
-       '<div style="background-color: #A63232; width: 0.6%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
+       '<div style="background-color: #A63232; width: 0.2%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
     
         '<div class="pd">' +
            '<img src="' + produtos[g].foto + '"class="ftproduto" >' +
@@ -362,7 +362,7 @@ function vertudo(){
 
         '<div class="pdt">' + 
 
-        '<div style="background-color: #A63232; width: 0.6%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
+        '<div style="background-color: #A63232; width: 0.2%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
 
         '<div class="pd">' +
         '<img src="' + produtos[t].foto + '"class="ftproduto" >' +
@@ -397,7 +397,7 @@ function vertudo(){
                '<div class="pdvalor">' + filtro[t].valor + '</div>' +
            '</div>' +
         
-           '<div style="background-color: #A63232; width: 0.6%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
+           '<div style="background-color: #A63232; width: 0.2%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
         
             '<div class="pd">' +
                '<img src="' + filtro[g].foto + '"class="ftproduto" >' +
@@ -426,7 +426,7 @@ function vertudo(){
 
         '<div class="pdt">' +
         
-        '<div style="background-color: #A63232; width: 0.6%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
+        '<div style="background-color: #A63232; width: 0.2%; height: auto; margin-left: 5%; margin-right: 5%;"></div>' +
 
         '<div class="pd">' +
         '<img src="' + filtro[t].foto + '"class="ftproduto" >' +
