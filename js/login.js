@@ -26,5 +26,18 @@
         $("#cadastrar").addClass("bounce");
         $("#cadastrar").removeClass("bounce", 1000);
       });
+
+    $("#inicial").click(function(){
+    $(this).addClass("bounceIn");
+    $(this).removeClass("bounceIn", 300);
+      });
+
+    $("#inicial").mouseenter(function(){
+        $(this).animate({opacity: 0.5}, 100);;
+     });
+    
+    $("#inicial").mouseleave(function(){
+        $(this).animate({opacity: 1}, 100);;
+     });
     
 

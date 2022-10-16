@@ -72,3 +72,8 @@ $(".menu").mouseenter(function(){
 $(".menu").mouseleave(function(){
     $(this).animate({opacity: 1}, 100);;
  });
+
+$(".menu").click(function(){
+    $(this).addClass("bounceIn");
+    $(this).removeClass("bounceIn", 300);
+});
